@@ -1,0 +1,177 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Azure
+*.publishsettings
+*.azurePubxml
+.azure/
+
+# Secrets
+secrets.json
+appsettings.Development.json
+*.pfx
+*.key
+*.pem
+
+# Testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cov.xml
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.backup
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# Receipt Test Files (keep originals only)
+test_result.json
+azure_test_result.json
+test_invalid.txt
+
+# Deployment
+deploy.zip
+*.zip
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if any)
+node_modules/
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Distribution / Packaging
+.Python
+*.manifest
+*.spec
+
+# Azure Functions
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+.python_packages/
+
+# Local development
+local.settings.json
+.funcignore
+
+# OCR Output (optional - comment out if you want to keep these)
+# ocr_output/
+# extracted_text/
+
+# Large files
+*.pdf
+*.PDF
+receipts/
+uploads/
+
+# Backup files
+*.bak
+*.backup
+
+# Certificate files
+*.crt
+*.cer
+
+# Configuration overrides
+config.local.json
+settings.local.json
