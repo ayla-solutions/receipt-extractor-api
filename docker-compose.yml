@@ -1,0 +1,24 @@
+services:
+  # Credit Card Expense Receipt API with Azure Document Intelligence
+  api:
+    build: .
+    container_name: expense-receipt-api-local
+    ports:
+      - "8000:8000"
+    environment:
+      - AZURE_DOC_INTEL_ENDPOINT=${AZURE_DOC_INTEL_ENDPOINT}
+      - AZURE_DOC_INTEL_KEY=${AZURE_DOC_INTEL_KEY}
+      - LOG_LEVEL=INFO
+    networks:
+      - expense-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  expense-network:
+    name: creditcard-expense-network
+    driver: bridge
